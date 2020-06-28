@@ -795,6 +795,7 @@ footer .copyright p a:hover {
     bottom: 0;
     top: 0;
     right: 0;
+    padding: 0;
   }
   .main-header .nav {
     display: -webkit-box;
@@ -862,7 +863,8 @@ footer .copyright p a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 10px 50px;
+    padding: 10px 0;
+    height: 100px;
   }
   header .container ul li {
     clear: both;
