@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fontawesome-webfont.eot">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <title>dinner</title>
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <div class="container">
             <div class="brand">
                 <a href="index.html">
-                    <img src="/images/logo.png" alt="Image brand" class="img-brand">
+                    <img src="images/logo.png" alt="Image brand" class="img-brand">
                 </a>
             </div>
+            <button class="navbar-toggler collapsed" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="nav">
                 <ul>
                     <li><a href="index.html">home</a></li>
@@ -39,59 +40,61 @@
                     </li>
                     <li><a href="#">contact</a></li>
                 </ul>
-            </div>
+            </div.icon>
         </div>
     </header>
 
-    <div class="carousel slide carousel-fade" id="carousel-go" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#carousel-go" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-go" data-slide-to="1"></li>
-            <li data-target="#carousel-go" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/slider-01.jpg" alt="first slide" class="d-block w-100">
-                <div class="overlay-background"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Welcome To <br> Live Dinner Restaurant</h1>
-                    <p>See how your users experience your website in realtime or view<br>
-                        trends to see any changes in performance over time.</p>
-                    <a href="#">RESERVATION</a>
+    <div class="cover-slide">
+        <div class="carousel slide carousel-fade" id="carousel-go" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#carousel-go" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-go" data-slide-to="1"></li>
+                <li data-target="#carousel-go" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider-01.jpg" alt="first slide" class="d-block w-100">
+                    <div class="overlay-background"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Welcome To <br> Live Dinner Restaurant</h1>
+                        <p>See how your users experience your website in realtime or view<br>
+                            trends to see any changes in performance over time.</p>
+                        <a href="#">RESERVATION</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-02.jpg" alt="second slide" class="d-block w-100">
+                    <div class="overlay-background"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Welcome To <br> Live Dinner Restaurant</h1>
+                        <p>See how your users experience your website in realtime or view<br>
+                            trends to see any changes in performance over time.</p>
+                        <a href="#">RESERVATION</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-03.jpg" alt="third slide" class="d-block w-100">
+                    <div class="overlay-background"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Welcome To <br> Live Dinner Restaurant</h1>
+                        <p>See how your users experience your website in realtime or view<br>
+                            trends to see any changes in performance over time.</p>
+                        <a href="#">RESERVATION</a>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="images/slider-02.jpg" alt="second slide" class="d-block w-100">
-                <div class="overlay-background"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Welcome To <br> Live Dinner Restaurant</h1>
-                    <p>See how your users experience your website in realtime or view<br>
-                        trends to see any changes in performance over time.</p>
-                    <a href="#">RESERVATION</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/slider-03.jpg" alt="third slide" class="d-block w-100">
-                <div class="overlay-background"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Welcome To <br> Live Dinner Restaurant</h1>
-                    <p>See how your users experience your website in realtime or view<br>
-                        trends to see any changes in performance over time.</p>
-                    <a href="#">RESERVATION</a>
-                </div>
-            </div>
+            <a href="#carousel-go" class="carousel-control-prev" data-slide="prev">
+                <span> <i class="carousel-control-prev-icon"></i> </span>
+            </a>
+            <a href="#carousel-go" class="carousel-control-next" data-slide="next">
+                <span> <i class="carousel-control-next-icon"></i> </span>
+            </a>
         </div>
-        <a href="#carousel-go" class="carousel-control-prev" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a href="#carousel-go" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
     </div>
 
     <div class="about">
         <div class="container">
-            <div class="text-aria">
+            <div class="text-area">
                 <h2>Welcome To <span>Live Dinner Restaurant</span></h2>
                 <h5>Little Story </h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat.
@@ -101,99 +104,372 @@
                     pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
                 <a href="#">RESERVATION</a>
             </div>
-            <div class="image-aria">
+            <div class="image-area">
                 <img src="images/about-img.jpg" alt="">
             </div>
         </div>
     </div>
 
     <div class="wrapper">
-        <div class="container">
-            <div class="content">
-                <p>" If you're not the one cooking, stay out of the way and compliment the chef. "</p>
-                <span>Michael Strahan</span>
-            </div>
+        <div class="content">
+            <p>" If you're not the one cooking, stay out of the way and compliment the chef. "</p>
+            <span>Michael Strahan</span>
         </div>
     </div>
 
-    <div class="gallary">
+    <div class="special-menu">
         <div class="caption">
             <h3>Special Menu</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
         </div>
         <div class="container">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                    aria-controls="v-pills-home" aria-selected="true">Home</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                    aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                    aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                    aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-all" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true">All</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-drinks" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-lunch" role="tab"
+                    aria-controls="v-pills-messages" aria-selected="false">Lunch</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-dinner" role="tab"
+                    aria-controls="v-pills-settings" aria-selected="false">Dinner</a>
             </div>
             <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active " id="v-pills-home" role="tabpanel"
+                <div class="tab-pane fade show active " id="v-pills-all" role="tabpanel"
                     aria-labelledby="v-pills-home-tab">
-                    <div class="all-card-wrapper">
+                    <div class="card-wrapper all">
                         <div>
                             <div class="content">
-                                    <h5>special drink</h5>
-                                    <p>lorem lorem lorem</p>
-                                    <span>7.8$</span>
-                            </div> <img src="images/blog-img-01.jpg">
+                                <h5>special drink 1</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div>
+                             <img src="images/img-01.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-02.jpg">
+                                <h5>special drink 2</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-02.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-03.jpg">
+                                <h5>special drink 3</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-03.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-04.jpg">
+                                <h5>special lunch 1</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-04.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-05.jpg">
+                                <h5>special lunch 2</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-05.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-06.jpg">
+                                <h5>special lunch 3</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-06.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-07.jpg">
+                                <h5>special dinner 1</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-07.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-08.jpg">
+                                <h5>special dinner 2</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-08.jpg">
                         </div>
                         <div>
                             <div class="content">
-
-                            </div> <img src="images/blog-img-09.jpg">
+                                <h5>special dinner 3</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-09.jpg">
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    ...</div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                    ...</div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                    ...</div>
+                <div class="tab-pane fade" id="v-pills-drinks" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="card-wrapper">
+                        <div>
+                            <div class="content">
+                                <h5>special drink 1</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-01.jpg">
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h5>special drink 2</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-02.jpg">
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h5>special drink 3</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-03.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-lunch" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="card-wrapper">
+                        <div>
+                            <div class="content">
+                                <h5>special lunch 1</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-04.jpg">
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h5>special lunch 2</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-05.jpg">
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h5>special lunch 3</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-06.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-dinner" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="card-wrapper">
+                        <div>
+                            <div class="content">
+                                <h5>special dinner 1</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-07.jpg">
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h5>special dinner 2</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-08.jpg">
+                        </div>
+                        <div>
+                            <div class="content">
+                                <h5>special dinner 3</h5>
+                                <p>Sed id magna vitae eros sagittis euismod.</p>
+                                <span>$ 7.8</span>
+                            </div> <img src="images/img-09.jpg">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="gallery">
+        <div class="caption">
+            <h3>Gallery</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <img src="images/gallery-img-01.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="images/gallery-img-02.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="images/gallery-img-03.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="images/gallery-img-04.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="images/gallery-img-05.jpg" alt="">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img src="images/gallery-img-06.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer-reviews">
+        <div class="caption">
+            <h3>Custmer Reviews</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+        </div>
+        <div class="container">
+            <div class="carousel slide" data-ride="carousel" id="carousel-customer-reviews">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="content">
+                            <div class="image-box"><img src="images/quotations-button.png" alt=""></div>
+                            <h3>STEVE FONSI</h3>
+                            <span>Web Designer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam
+                                at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+                                semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh
+                                non aliquet. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="content">
+                            <div class="image-box"><img src="images/quotations-button.png" alt=""></div>
+                            <h3>PAUL MITCHEL</h3>
+                            <span>Web Developer</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam
+                                at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+                                semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh
+                                non aliquet. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="content">
+                            <div class="image-box"><img src="images/quotations-button.png" alt=""></div>
+                            <h3>DANIEL VEBAR</h3>
+                            <span>Seo Analyst</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam
+                                at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+                                semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh
+                                non aliquet. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-control">
+                    <a href="#carousel-customer-reviews" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#carousel-customer-reviews" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="container">
+            <div class="content">
+                <div>
+                   <div class="icon"> <i class="fa fa-phone"></i></div>
+                    <div class="phone">
+                        <h5>Phone</h5>
+                        <p>+02 123-456-7890</p>
+                    </div>
+                </div>
+                <i class="fa fa-arrow-right"></i>
+                <div>
+                   <div class="icon"> <i class="fa fa-envelope"></i></div>
+                    <div class="email">
+                        <h5>Email</h5>
+                        <p>yourmail@gmail.com</p>
+                    </div>
+                </div>
+                <i class="fa fa-arrow-right"></i>
+                <div>
+                  <div class="icon">  <i class="fa fa-map-marker"></i></div>
+                    <div class="location">
+                        <h5>Location</h5>
+                        <p>800,Lorem Street,US</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="about-us col-lg-3 col-md-6">
+                        <h3>ABOUT US</h3>
+                        <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac,
+                            semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
+                    </div>
+                    <div class="subscribe col-lg-3 col-md-6">
+                        <h3>SUBSCRIBE</h3>
+                        <form class="subscribe-form">
+                            <input type="email" class="email" placeholder="Enter Your Email">
+                            <button class="submit">SUBSCRIBE</button>
+                        </form>
+                        <ul class="list-social">
+                            <li class="list-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-us col-lg-3 col-md-6">
+                        <h3>CONTACT US</h3>
+                        <p>Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+                        <a href="#">+01 2000 800 9999</a>
+                        <br>
+                        <a href="#">info@admin.com</a>
+                    </div>
+                    <div class="opening-hours col-lg-3 col-md-6">
+                        <h3>OPENING HOURS</h3>
+                        <p>Monday: Closed</p>
+                        <p>Tue-Wed : 9:Am - 10PM</p>
+                        <p>Thu-Fri : 7:Am - 10PM</p>
+                        <p>Sat-Sun : 5:PM - 10PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>
+                                All Rights Reserved. © 2020 <a href="#"> Live Dinner Restaurant </a> Design By : <a
+                                    href="#"> Momen Nasser </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custem.js"></script>

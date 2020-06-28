@@ -1,14 +1,14 @@
 
 
 $(".bages").click(function(){
-    // $(".dbages").toggle("speed").css("display","flex");
-    $(".dbages").slideToggle(500);
     $(".dblog").slideUp(500); 
+    $(".dbages").slideToggle(500);
 });
 
 $(".blog").click(function(){
     $(".dbages").slideUp(500);  
     $(".dblog").slideToggle(500);
+
 });
 
 $(document).click(function (e) {
@@ -17,18 +17,6 @@ $(document).click(function (e) {
         $(".dblog, .dbages").slideUp(500);
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

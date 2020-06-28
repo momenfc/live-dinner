@@ -1,0 +1,124 @@
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;   
+
+    .overlay{
+        width: 100%;
+        padding-top: 20px; 
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    h3 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-bottom: 2px solid rgba(207, 166, 113, 0.7);
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    p, a 
+    {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    a:hover{
+        color: #D65106;
+        text-decoration: none;
+    }
+
+    .subscribe {
+        form {
+            .email {
+                width: 100%;
+                padding: 10px;
+                color: #fff;
+                font-size: 13px;
+                font-weight: 400;
+                text-align: center;
+                background-color: #000;
+                border: 0;
+                outline: none;
+                border-right: 3px solid #D65106;
+                border-bottom: 3px solid #D65106;
+                border-radius: 8px 8px 0 0;
+            }
+
+            .submit {
+                width: 100%;
+                padding: 10px;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 400;
+                background-color: #000;
+                border: none;
+                outline: none;
+                border-left: 3px solid #D65106;
+                border-radius: 0 0 8px 8px;
+                transition: all ease-in-out .2s;
+
+                &:hover {
+                    background-color: #D65106;
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        ul{
+            padding: 20px 0 0 ;
+            li{
+                float: left;
+                list-style: none;
+                padding: 3px;
+                text-align: center;
+                a{
+                    color: #D65106;
+                    background-color: #fff;
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    display: block;
+                    border-radius: 7px;
+                    font-size: 18px;
+                    i{
+                        transition: all ease-in-out .1s;
+                    }
+
+                    &:hover i{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-us{
+        p,a{
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    .copyright{
+        background-color: #000;
+        margin-top: 25px;
+        padding: 20px 0;
+        border-top: 1px solid rgba(207, 166, 113, 0.7);
+
+        p{
+            text-align: center;
+            a{
+                color: #fff;
+                font-size: 17px;
+
+                &:hover{
+                    color: #D65106;
+                }
+            }
+        }
+    }
+}
