@@ -9,83 +9,6 @@ body {
   font-size: 15px;
 }
 
-.cover-slide .carousel {
-  max-height: 640px;
-  overflow: hidden;
-}
-
-.cover-slide .carousel .carousel-indicators > .active {
-  background-color: #D65106;
-}
-
-.cover-slide .carousel .carousel-indicators > li {
-  width: 35px;
-  height: 6px;
-  margin: 0 5px;
-}
-
-.cover-slide .carousel .carousel-inner .carousel-item .overlay-background {
-  background: #333;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
-}
-
-.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption {
-  position: absolute;
-  left: 12%;
-  top: 20%;
-  width: auto;
-  text-align: left;
-}
-
-.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption h1 {
-  font-size: 70px;
-}
-
-.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption p {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption a {
-  font-size: 19px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #fff;
-  background-color: #d65106;
-  padding: 20px 35px;
-  margin: 10px 0;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption a:hover {
-  background-color: #333;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.cover-slide .carousel .carousel-control-prev,
-.cover-slide .carousel .carousel-control-next {
-  opacity: .5;
-}
-
-.cover-slide .carousel .carousel-control-prev span,
-.cover-slide .carousel .carousel-control-next span {
-  background-color: #D65106;
-  padding: 15px 15px 10px;
-  border-radius: 8px;
-}
-
-.cover-slide .carousel .carousel-control-prev span:hover,
-.cover-slide .carousel .carousel-control-next span:hover {
-  background-color: #000;
-}
-
 .main-header {
   background-color: #F8F9FA;
   border-bottom-left-radius: 100px;
@@ -258,6 +181,87 @@ body {
     margin-left: 10px;
     border-radius: 7px;
   }
+}
+
+.cover-slide {
+  padding-top: 112px;
+}
+
+.cover-slide .carousel {
+  max-height: 640px;
+  overflow: hidden;
+}
+
+.cover-slide .carousel .carousel-indicators > .active {
+  background-color: #D65106;
+}
+
+.cover-slide .carousel .carousel-indicators > li {
+  width: 35px;
+  height: 6px;
+  margin: 0 5px;
+}
+
+.cover-slide .carousel .carousel-inner .carousel-item .overlay-background {
+  background: #333;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  left: 12%;
+  top: 20%;
+  width: auto;
+  text-align: left;
+}
+
+.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 70px;
+}
+
+.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption a {
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d65106;
+  padding: 20px 35px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.cover-slide .carousel .carousel-inner .carousel-item .carousel-caption a:hover {
+  background-color: #333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.cover-slide .carousel .carousel-control-prev,
+.cover-slide .carousel .carousel-control-next {
+  opacity: .5;
+}
+
+.cover-slide .carousel .carousel-control-prev span,
+.cover-slide .carousel .carousel-control-next span {
+  background-color: #D65106;
+  padding: 15px 15px 10px;
+  border-radius: 8px;
+}
+
+.cover-slide .carousel .carousel-control-prev span:hover,
+.cover-slide .carousel .carousel-control-next span:hover {
+  background-color: #000;
 }
 
 .about {
@@ -687,6 +691,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .contact-info {
+    border-radius: 0;
+  }
   .contact-info .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -700,6 +707,12 @@ body {
   }
   .contact-info .content > i {
     display: none;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 599px) {
+  .contact-info {
+    border-radius: 0;
   }
 }
 

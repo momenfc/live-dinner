@@ -53,14 +53,25 @@
 
 @media (max-width: 767px) {
 
-    .contact-info .content {
+    .contact-info {
+        border-radius: 0;
+        .content {
         flex-direction: column;
         align-items: flex-start;
         padding: 20px;
         margin: 60px;
-
         >i {
             display: none;
         }
+        }
+
     }
 }
+
+@media (min-width:280px) and (max-width:599px) {
+    .contact-info {
+        border-radius: 0;
+    }
+
+}
+
