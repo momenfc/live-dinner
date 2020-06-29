@@ -83,3 +83,15 @@
         }
     }
 }
+
+// responsive
+
+@media (max-width: 767px) {
+
+    .about {
+        .container {
+            grid-template-columns: 1fr
+        }
+    }
+
+}

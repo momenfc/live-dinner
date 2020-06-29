@@ -1,5 +1,6 @@
 .special-menu {
     background-color: #fff;
+
     .caption {
         display: flex;
         flex-direction: column;
@@ -20,12 +21,12 @@
     .container {
         display: flex;
         position: relative;
-        
+
         .nav-pills {
             width: 20%;
             margin-right: 25px;
             position: sticky;
-            top:130px;
+            top: 130px;
             height: 100%;
 
             .active {
@@ -112,3 +113,5 @@
     }
 
 }
+
+
