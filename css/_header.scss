@@ -1,9 +1,185 @@
+// start header
+.main-header {
+    background-color: #F8F9FA;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
 
-.collapsed{
-    display: block;
-    padding: 10px;
-    background-color: rgb(8, 8, 8);
-    .navbar-toggler-icon{
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        position: relative;
 
+        .brand {
+            margin: 20px 0 20px 40px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .nav {
+            .colse-menu {
+                position: absolute;
+                top: 40px;
+                right: 205px;
+                padding: 0px 10px;
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                background: #333;
+                border: 1px solid rgba(134, 134, 134, 0.5);
+                border-radius: 7px;
+                outline: 0;
+                display: none;
+                &:hover {
+                    color: #D65106;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 0px;
+
+                li {
+                    list-style: none;
+                    float: left;
+                    padding: 3px;
+                    position: relative;
+
+                    a {
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        padding: 10px;
+                        border-radius: 10px;
+                        width: 100%;
+                        transition: all ease-in-out .2s;
+
+                        .d-icon{
+                            font-weight: normal;
+                        }
+
+
+                        &:hover {
+                            background-color: #D65106;
+                            color: #fff;
+                        }
+                    }
+
+                    &:first-child a {
+                        background-color: #D65106;
+                        color: #fff;
+
+                    }
+
+                    .d-item {
+                        position: absolute;
+                        left: 0;
+                        top: 35px;            
+                        background: #fff;
+                        width: 150px;
+                        padding: 10px;
+                        display: none;
+                        a{
+                            display: block;
+                            border-radius: 0;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        .btn-menu {
+            padding: 0 12px;
+            margin: 0 60px;
+            font-size: 28px;
+            color: rgb(70, 70, 70);
+            background-color: #F8F9FA;
+            border: 1px solid rgba(134, 134, 134, 0.5);
+            outline: 0;
+            display: none;
+
+            &:hover {
+                color: #D65106;
+            }
+
+        }
     }
 }
+
+
+//responsive
+@media only screen and (min-width: 992px) and (max-width: 1180px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    .main-header {
+        .container {
+            .btn-menu {
+                display: block;
+            }
+
+            .nav {
+                height: 800px;
+                position: absolute;
+                right: -400px;
+                top: 0px;
+                background-color: rgba(75, 75, 75, 0.9);
+                width: 300px;
+                padding-top: 120px;
+
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    justify-content: start;
+                    width: 100%;
+
+                    li {
+                        padding: 2px;
+                        margin-left: 10px;
+                        
+
+                        a {
+                            width: 100%;
+                            display: block;
+                            padding: 10px;
+                            color:#fff;
+
+                           
+                        }
+
+                        .d-item {
+                            position: unset;
+                            background: initial;
+                            width: auto;
+                            padding: 0;
+
+                            a {
+                                padding: 7px;
+                                margin-left: 10px;
+                                border-radius: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:280px) and (max-width:599px) {}

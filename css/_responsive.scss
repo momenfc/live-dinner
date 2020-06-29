@@ -1,94 +1,20 @@
 // responsive
 @media only screen and (min-width: 992px) and (max-width: 1180px) {}
 
-@media (min-width: 768px) and (max-width: 991px) {
-    header .container .nav ul li a {
-        padding: 10px
-    }
-
-    .contact-info .content {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 20px;
-    }
-}
-
+@media (min-width: 768px) and (max-width: 991px) {}
 
 @media (max-width: 767px) {
-    header {
-        position: relative;
-        padding: 0 40px;
-        border-radius: 0;
-
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            align-items: center;
-            padding: 10px 50px;
-
-            .nav{
-                margin-top:40px ;
-                position: relative;
-                left:-400px;
-            }
-
-            ul {
-                li {
-                    clear: both;
-                    padding: 8px;
-
-                    a {
-                        padding: 0px;
-                    }
-                }
-            }
-        }
-    }
-
-    .main-header {
-        position: sticky !important;
-        width: 100%;
-        height: 100px;
-        left: 0;
-        bottom: 0;
-        top: 0;
-        right: 0;
-        padding: 0;
-        .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            z-index: 4444;
-            .collapsed{
-                display: block;
-            }
-    
-            .nav {
-                display: none;
-                margin-top: 30px;
-            }
-        }
-    }
 
     .about {
         .container {
             grid-template-columns: 1fr
         }
     }
-    
+
     .all {
-        height:550px;
+        height: 550px;
         overflow-y: auto;
-       
+
     }
 
 
@@ -104,33 +30,6 @@
 }
 
 @media (min-width:280px) and (max-width:599px) {
-    header {
-        position: relative;
-        padding: 0 40px;
-        border-radius: 0;
-
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            align-items: center;
-            padding: 10px 0;
-            height: 100px;
-            .brand {}
-
-            ul {
-                li {
-                    clear: both;
-                    padding: 8px;
-
-                    a {
-                        padding: 0px;
-                    }
-                }
-            }
-        }
-
-    }
 
     .about {
         .container {

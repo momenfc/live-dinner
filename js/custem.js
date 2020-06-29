@@ -18,6 +18,26 @@ $(document).click(function (e) {
     }
 });
 
+$(document).ready(function(){
+    $(".btn-menu").click(function(){
+        $(".nav").animate({
+            right:'-140px'
+        },function(){
+            $(".btn-menu").fadeOut();
+            $(".colse-menu").fadeIn(150);
+        });
+    });
+
+    $(".colse-menu").click(function(){
+        $(".nav").animate({
+            right:'-400px'
+        },function(){
+            $(".colse-menu").fadeOut();
+        });
+        $(".btn-menu").fadeIn(800);
+
+    })
+});
 
 
 
